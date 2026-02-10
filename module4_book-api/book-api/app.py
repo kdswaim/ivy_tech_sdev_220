@@ -1,3 +1,23 @@
+"""
+This is a CRUD API for managing books.
+
+Author: Kristen Swaim
+Course: SDEV 220 - Python APIs
+
+Book Model:
+    - id: auto-incremented integer
+    - book_name: string
+    - author: string
+    - publisher: string
+
+Endpoints:
+    - GET /books Returns a list of all books
+    - POST /books Adds a new book
+    - PUT /books/<book_id> Updates a book by id
+    - DELETE /books/<book_id> Deletes a book by id
+
+"""
+
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
